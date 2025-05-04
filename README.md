@@ -79,7 +79,3 @@ docker images
 * Docker Desktop → Ubuntu integration is key.
 * Use `docker context use desktop-linux` to align CLI with Desktop.
 * Always check `docker ps -a` and `docker images` after switching context.
-
-```
-
-```
