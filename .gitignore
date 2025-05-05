@@ -2,15 +2,15 @@
 .env
 
 # Ignore Docker related files
-.dockerignore
+# .dockerignore
 
 # Ignore node_modules (if using Node.js)
 node_modules/
 
 # Ignore compiled Python files
-*.pyc
-*.pyo
-__pycache__/
+# *.pyc
+# *.pyo
+# __pycache__/s
 
 # Ignore log files
 *.log
