@@ -1,15 +1,16 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
-const port = 3000;
 
+app.use(cors());  // <<-- ADD THIS
 app.use(express.json());
 
+// Example route
 app.post('/register', (req, res) => {
-    const { username, email, password } = req.body;
-    console.log('Received registration:', { username, email, password });
-    res.json({ message: `User ${username} registered successfully!` });
+  console.log(req.body);
+  res.json({ message: 'User registered successfully!' });
 });
 
-app.listen(port, () => {
-    console.log(`Backend running on port ${port}`);
+app.listen(3000, () => {
+  console.log('Backend running on port 3000');
 });
