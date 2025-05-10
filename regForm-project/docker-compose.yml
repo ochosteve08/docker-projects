@@ -1,8 +1,7 @@
-version: '3.9'
-
 services:
   backend:
     build: ./backend
+    image: ochosteve08/regform-backend:latest
     ports:
       - "3000:3000"
     environment:
@@ -14,6 +13,7 @@ services:
 
   frontend:
     build: ./frontend
+    image: ochosteve08/regform-frontend:latest
     ports:
       - "8080:80"
     networks:
