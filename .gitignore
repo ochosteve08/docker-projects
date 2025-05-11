@@ -26,3 +26,7 @@ node_modules/
 # Ignore system files
 .DS_Store
 Thumbs.db
+docker-complete.md
+docker-installation.md
+docker-fullstack.md
+docker-image.md
