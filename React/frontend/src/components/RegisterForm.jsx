@@ -18,11 +18,14 @@ const RegisterForm = () => {
     });
   };
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`${window.location.origin.replace('8080', '3000')}/register`, {
+      // const res = await fetch(`${window.location.origin.replace('8080', '3000')}/register`, {
+      const res = await fetch(`${API_URL}/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
