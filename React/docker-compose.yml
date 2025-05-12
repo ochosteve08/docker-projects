@@ -15,7 +15,7 @@ services:
 
   backend:
     image: ochosteve08/reactform-backend:latest
-    container_name: backend
+    container_name: reactform-backend
     build:
       context: ./backend
     ports:
@@ -24,6 +24,7 @@ services:
       - ./backend/.env
     volumes:
       - ./backend:/app
+      - backend_node_modules:/app/node_modules
     depends_on:
       - mongo
     networks:
@@ -43,6 +44,7 @@ services:
 
 volumes:
   mongo_data:
+  backend_node_modules:
 
 networks:
   app-network:
