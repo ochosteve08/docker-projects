@@ -1,6 +1,8 @@
 # Stage 1: Build the React app
 FROM node:20-alpine AS builder
 
+
+# define working directory in container
 WORKDIR /app
 
 COPY package.json package-lock.json ./
