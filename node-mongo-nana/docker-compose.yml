@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   backend:
-    build: ./backend
+    image: 266735805044.dkr.ecr.us-east-1.amazonaws.com/node-mongo-nana-backend:latest
     ports:
       - "3000:3000"
     environment:
